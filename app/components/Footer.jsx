@@ -1,69 +1,21 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import Image from "next/image";
+import { AnimeDataContext } from "../data/Data";
 
-export default function WinterMountainScene() {
+export default function Footer({ season }) {
   const [snowSpeed, setSnowSpeed] = useState(1);
+  const { theme, footer } = useContext(AnimeDataContext);
 
-  // Winter anime recommendations (text only)
   const winterAnime = [
     "Yuru Camp△ - Comfy winter camping",
     "Sword Art Online: Alicization - Snowy fantasy world",
     "Attack on Titan: Final Season - Winter warfare",
   ];
 
-  // Snowflakes with different layers
-  const snowflakes = Array.from({ length: 80 }).map((_, i) => (
-    <div
-      key={i}
-      className="snowflake"
-      style={{
-        left: `${Math.random() * 100}%`,
-        animationDuration: `${(Math.random() * 3 + 2) / snowSpeed}s`,
-        animationDelay: `${Math.random() * 5}s`,
-        opacity: Math.random() * 0.7 + 0.3,
-        fontSize: `${Math.random() * 14 + 6}px`,
-        zIndex: Math.random() > 0.7 ? 15 : 5,
-        filter: `blur(${Math.random() * 2}px)`,
-      }}
-    >
-      {["❄", "❅", "❆", "✦"][Math.floor(Math.random() * 4)]}
-    </div>
-  ));
-
   return (
-    <div className="relative h-[60vh] bg-gradient-to-b from-[#0a1a30] via-[#0a3d6b] to-[#0a5fac] overflow-hidden">
-      {/* Snow Controls */}
-      <div className="absolute top-4 right-4 z-30 bg-white/90 p-3 rounded-lg shadow-xl backdrop-blur-sm border border-gray-200">
-        <p className="text-sm mb-2 text-gray-800 font-bold">Snow Controls:</p>
-        <div className="flex flex-col gap-2">
-          <button
-            onClick={() => setSnowSpeed(0.5)}
-            className="px-3 py-1 text-sm bg-blue-100 rounded-lg hover:bg-blue-200 transition flex items-center gap-2"
-          >
-            <span>❄</span> Slow
-          </button>
-          <button
-            onClick={() => setSnowSpeed(1)}
-            className="px-3 py-1 text-sm bg-blue-200 rounded-lg hover:bg-blue-300 transition flex items-center gap-2"
-          >
-            <span>❄❄</span> Normal
-          </button>
-          <button
-            onClick={() => setSnowSpeed(2)}
-            className="px-3 py-1 text-sm bg-blue-300 rounded-lg hover:bg-blue-400 transition flex items-center gap-2"
-          >
-            <span>❄❄❄</span> Fast
-          </button>
-        </div>
-      </div>
-
-      {/* Snow animation */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {snowflakes}
-      </div>
-
+    <div className="relative h-[60vh] overflow-hidden">
       {/* Mountain Background - Touching base */}
       <div className="absolute bottom-0 w-full h-[100%] mt-[10px] z-10">
         <Image

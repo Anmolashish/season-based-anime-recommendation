@@ -192,8 +192,8 @@ export default function AnimeDataProvider({ children }) {
       description: "Soft muted sky with autumn haze",
     },
     winter: {
-      background: "from-[#e0f2fe] via-[#bae6fd] to-[#7dd3fc]", // Pale winter sky
-      text: "text-gray-800",
+      background: "from-[#0a1a30] via-[#0a3d6b] to-[#0a5fac]", // Pale winter sky
+      text: "text-gray-200",
       icon: "❄️",
       accent: "bg-cyan-400",
       card: "bg-slate-200/80",

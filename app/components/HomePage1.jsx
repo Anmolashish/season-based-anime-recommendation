@@ -22,7 +22,7 @@ export default function HomePage1({ season }) {
         </div>
 
         <div className="relative">
-          <div className="flex overflow-x-auto pb-6 -mx-4 px-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
+          <div className="flex overflow-x-auto scrollbar-hide pb-6 -mx-4 px-4 ">
             <div className="flex space-x-6">
               {recommendedAnimes.map((anime) => (
                 <AnimeCard key={`rec-${anime.title}`} anime={anime} />
@@ -42,7 +42,7 @@ export default function HomePage1({ season }) {
         </div>
 
         <div className="relative">
-          <div className="flex overflow-x-auto pb-6 -mx-4 px-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
+          <div className="flex overflow-x-auto scrollbar-hide pb-6 -mx-4 px-4 ">
             <div className="flex space-x-6">
               {popularAnimes.map((anime) => (
                 <AnimeCard key={`pop-${anime.title}`} anime={anime} />
@@ -54,15 +54,12 @@ export default function HomePage1({ season }) {
 
       {/* Global Styles */}
       <style jsx global>{`
-        .scrollbar-thin::-webkit-scrollbar {
-          height: 0px;
+        .scrollbar-hide::-webkit-scrollbar {
+          display: none;
         }
-        .scrollbar-thin::-webkit-scrollbar-thumb {
-          background-color: rgba(156, 163, 175, 0.5);
-          border-radius: 3px;
-        }
-        .scrollbar-thin::-webkit-scrollbar-thumb:hover {
-          background-color: rgba(156, 163, 175, 0.7);
+        .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
         }
       `}</style>
     </main>

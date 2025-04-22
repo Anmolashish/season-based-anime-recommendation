@@ -200,8 +200,11 @@ export default function AnimeDataProvider({ children }) {
       description: "Crisp pale blue winter atmosphere",
     },
   };
+  const footer = {
+    winter: { id: "1" },
+  };
   return (
-    <AnimeDataContext.Provider value={{ animeData, theme }}>
+    <AnimeDataContext.Provider value={{ animeData, theme, footer }}>
       {children}
     </AnimeDataContext.Provider>
   );

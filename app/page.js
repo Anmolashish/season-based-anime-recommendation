@@ -1,10 +1,6 @@
-import React from "react";
-import Footer from "./components/Footer";
+import Image from "next/image";
+import HomePage1 from "./components/HomePage1";
 
-export default function page() {
-  return (
-    <>
-      <Footer />
-    </>
-  );
+export default function Home() {
+  return <>Hello world</>;
 }

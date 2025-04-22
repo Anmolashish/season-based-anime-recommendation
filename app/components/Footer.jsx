@@ -15,14 +15,14 @@ export default function Footer({ season }) {
   ];
 
   return (
-    <div className="relative h-[60vh] overflow-hidden">
+    <div className="relative h-[70vh] overflow-hidden">
       {/* Mountain Background - Touching base */}
       <div className="absolute bottom-0 w-full h-[100%] mt-[10px] z-10">
         <Image
-          src="/Images/pngwing.com.png"
+          src="/Images/image-from-rawpixel-id-6757519-png.png"
           alt="Snowy mountains"
           fill
-          className="object-cover object-bottom"
+          className="object-cover object-top"
           priority
         />
       </div>
@@ -41,14 +41,6 @@ export default function Footer({ season }) {
 
       {/* CSS */}
       <style jsx global>{`
-        @keyframes snowfall {
-          0% {
-            transform: translateY(-10vh) rotate(0deg);
-          }
-          100% {
-            transform: translateY(100vh) rotate(360deg);
-          }
-        }
         .snowflake {
           position: absolute;
           color: white;

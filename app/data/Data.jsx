@@ -203,8 +203,46 @@ export default function AnimeDataProvider({ children }) {
   const footer = {
     winter: { id: "1" },
   };
+  const seasonalAnime = {
+    winter: [
+      " Yuru Camp△ - Comfy winter camping adventures with friends",
+      "Sword Art Online: Alicization - Snowy fantasy world battles",
+      "Attack on Titan: Final Season - Intense winter warfare",
+      "Tokyo Godfathers - Heartwarming Christmas homeless story",
+      "Erased - Mystery set in snowy Hokkaido",
+    ],
+    autumn: [
+      " Hyouka - School mysteries with beautiful autumn scenery",
+      "  Spice and Wolf - Medieval merchant tale during harvest season",
+      "March Comes in Like a Lion - Emotional shogi drama with fall colors",
+      " Mushishi - Supernatural stories perfect for cool autumn nights",
+      "Wolf Children - Touching family story spanning autumn landscapes",
+    ],
+    summer: [
+      "  Free! - Competitive swimming with summer vibes",
+      "Grand Blue - Hilarious college diving and beach adventures",
+      "A Place Further Than the Universe - Antarctic expedition during summer break",
+      "Barakamon - Island life with summer festivals",
+      "Non Non Biyori - Relaxing countryside summer days",
+    ],
+    rainy: [
+      "Garden of Words - Beautiful rain-themed romance",
+      "Weathering With You - Supernatural rain phenomenon story",
+      "The Girl Who Leapt Through Time - Time travel during rainy days",
+      "5 Centimeters Per Second - Emotional stories connected by rain",
+      "Violet Evergarden - Episodic tales with stunning rainy scenes",
+    ],
+  };
+  const seasonalTheme = {
+    summer: { image: "/Images/summer.png" },
+    winter: { image: "/Images/pngwing.com.png" },
+    autumn: [],
+    rainy: [],
+  };
   return (
-    <AnimeDataContext.Provider value={{ animeData, theme, footer }}>
+    <AnimeDataContext.Provider
+      value={{ animeData, theme, footer, seasonalAnime, seasonalTheme }}
+    >
       {children}
     </AnimeDataContext.Provider>
   );

@@ -1,39 +1,37 @@
 "use client";
 
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import Image from "next/image";
 import { AnimeDataContext } from "../data/Data";
 
 export default function Footer({ season }) {
-  const [snowSpeed, setSnowSpeed] = useState(1);
-  const { theme, footer } = useContext(AnimeDataContext);
+  const { seasonalAnime, theme, seasonalTheme } = useContext(AnimeDataContext);
 
-  const winterAnime = [
-    "Yuru Camp△ - Comfy winter camping",
-    "Sword Art Online: Alicization - Snowy fantasy world",
-    "Attack on Titan: Final Season - Winter warfare",
-  ];
+  // Get anime recommendations for current season
+  const currentSeasonAnime = seasonalAnime[season] || seasonalAnime.winter;
+  const currentTheme = seasonalTheme[season] || seasonalTheme.winter;
 
   return (
-    <div className="relative h-[60vh] overflow-hidden">
+    <div className={`relative h-[60vh] overflow-hidden `}>
       {/* Mountain Background - Touching base */}
       <div className="absolute bottom-0 w-full h-[100%] mt-[10px] z-10">
         <Image
-          src="/Images/pngwing.com.png"
-          alt="Snowy mountains"
+          src={currentTheme.image} // Changed to use seasonal image
+          alt={`${season} landscape`}
           fill
           className="object-cover object-bottom"
           priority
         />
       </div>
 
-      {/* Anime Recommendations as Simple Text */}
+      {/* Seasonal Anime Recommendations */}
       <div className="absolute bottom-24 left-4 z-20 bg-white/80 p-3 rounded-lg backdrop-blur-sm max-w-xs">
-        <h3 className="font-bold text-gray-800 mb-2">
-          Winter Anime Recommendations:
-        </h3>
+        <h4 className="font-bold text-xl text-gray-800 mb-2">
+          {season.charAt(0).toUpperCase() + season.slice(1)} Anime
+          Recommendations:
+        </h4>
         <ul className="text-sm text-gray-700 space-y-1">
-          {winterAnime.map((anime, index) => (
+          {currentSeasonAnime.slice(0, 3).map((anime, index) => (
             <li key={index}>• {anime}</li>
           ))}
         </ul>

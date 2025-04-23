@@ -14,7 +14,7 @@ export default function HomePage1({ season }) {
     <main className="min-h-screen  pb-16">
       {/* Recommended Section */}
       <section className="pt-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="relative mb-14 group">
+        <div className="relative z-20 mb-14 group">
           <div className="flex items-center gap-6">
             {/* Left divider - enhanced */}
             <div className="relative flex-grow h-[1.5px] bg-gray-200/80 overflow-hidden">
@@ -64,7 +64,7 @@ export default function HomePage1({ season }) {
 
       {/* Popular Section */}
       <section className="pt-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="relative mb-14 group">
+        <div className="relative z-20 mb-14 group">
           <div className="flex items-center gap-6">
             {/* Left divider - enhanced */}
             <div className="relative flex-grow h-[1.5px] bg-gray-200/80 overflow-hidden">

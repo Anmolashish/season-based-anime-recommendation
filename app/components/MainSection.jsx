@@ -3,6 +3,7 @@ import React, { useContext, useState, useEffect } from "react";
 import { AnimeDataContext } from "../data/Data";
 import HomePage1 from "./HomePage1";
 import Footer from "./Footer";
+import WeatherControls from "./WeatherControls";
 
 export default function MainSection(props) {
   const { theme } = useContext(AnimeDataContext);
@@ -69,6 +70,7 @@ export default function MainSection(props) {
                 })`,
                 borderRadius: "50%",
                 filter: `blur(${Math.random() * 2 * weatherIntensity}px)`,
+
                 boxShadow: `0 0 ${
                   Math.random() * 10 + 5 * weatherIntensity
                 }px rgba(255, 200, 50, ${0.3 * weatherIntensity})`,
@@ -115,70 +117,11 @@ export default function MainSection(props) {
   return (
     <div className={`w-full h-fit bg-gradient-to-b ${currentBg} relative`}>
       {/* Weather Controls */}
-      <div className="fixed top-4 right-4 z-30 bg-white/90 p-3 rounded-lg shadow-xl backdrop-blur-sm border border-gray-200">
-        <p className="text-sm mb-2 text-gray-800 font-bold">
-          Weather Controls:
-        </p>
-        <div className="flex flex-col gap-2">
-          <button
-            onClick={() => setWeatherIntensity(0.5)}
-            className={`px-3 py-1 text-sm rounded-lg ${
-              theme[props.season].controller.slow
-            } ${
-              theme[props.season].controllerHover.slow
-            } transition flex items-center gap-2`}
-          >
-            <span>
-              {props.season === "winter"
-                ? "❄"
-                : props.season === "rainy"
-                ? "🌧️"
-                : props.season === "autumn"
-                ? "🍁"
-                : "🌡️"}
-            </span>{" "}
-            Slow (Mild)
-          </button>
-          <button
-            onClick={() => setWeatherIntensity(1)}
-            className={`px-3 py-1 text-sm rounded-lg ${
-              theme[props.season].controller.normal
-            } ${
-              theme[props.season].controllerHover.normal
-            } transition flex items-center gap-2`}
-          >
-            <span>
-              {props.season === "winter"
-                ? "❄❄"
-                : props.season === "rainy"
-                ? "🌧️🌧️"
-                : props.season === "autumn"
-                ? "🍁🍁"
-                : "🌡️🌡️"}
-            </span>{" "}
-            Normal
-          </button>
-          <button
-            onClick={() => setWeatherIntensity(2)}
-            className={`px-3 py-1 text-sm rounded-lg ${
-              theme[props.season].controller.fast
-            } ${
-              theme[props.season].controllerHover.fast
-            } transition flex items-center gap-2`}
-          >
-            <span>
-              {props.season === "winter"
-                ? "❄❄❄"
-                : props.season === "rainy"
-                ? "🌧️🌧️🌧️"
-                : props.season === "autumn"
-                ? "🍁🍁🍁"
-                : "🌡️🌡️🌡️"}
-            </span>{" "}
-            Fast (Intense)
-          </button>
-        </div>
-      </div>
+      <WeatherControls
+        season={props.season}
+        theme={theme}
+        setWeatherIntensity={setWeatherIntensity}
+      />
 
       {/* Seasonal Animation */}
       <div className="absolute inset-0 -top-20 overflow-hidden pointer-events-none">

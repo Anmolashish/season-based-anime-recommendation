@@ -202,9 +202,9 @@ export default function AnimeDataProvider({ children }) {
     },
     summer: {
       background: "from-[#38bdf8] via-[#0ea5e9] to-[#0284c7]",
-      text: "text-gray-900",
+      text: "text-blue-900",
       icon: "☀️",
-      accent: "bg-amber-300",
+      accent: "bg-rose-400",
       card: "bg-sky-100/80",
       description: "Vibrant summer sky with golden sunlight",
       controller: {

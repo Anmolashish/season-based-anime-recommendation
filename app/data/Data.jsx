@@ -9,7 +9,7 @@ export default function AnimeDataProvider({ children }) {
       {
         title: "Garden of Words",
         image:
-          "https://m.media-amazon.com/images/M/MV5BMTM3NDM5MzY5OV5BMl5BanBnXkFtZTcwNjExMDUwOQ@@._V1_.jpg",
+          "https://m.media-amazon.com/images/M/MV5BYjdiMDdlMDItOGM4Ny00YmE4LTk0MTEtMGRhM2Y4OWZkZDZkXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg",
         genres: ["Drama", "Romance", "Slice of Life"],
         quote: "On rainy days, I hear the voice of the sky.",
         mood: "Melancholic",
@@ -17,7 +17,7 @@ export default function AnimeDataProvider({ children }) {
       {
         title: "Weathering With You",
         image:
-          "https://m.media-amazon.com/images/M/MV5BNzBmMWE4ODgtMzUyNy00YWQ4LTgyOTItNzE1NTk5OWI2N2M4XkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg",
+          "https://upload.wikimedia.org/wikipedia/en/thumb/6/66/Weathering_with_You_Poster.jpg/250px-Weathering_with_You_Poster.jpg",
         genres: ["Fantasy", "Romance", "Drama"],
         quote:
           "The weather is crazy, but maybe the world was crazy from the beginning.",
@@ -26,7 +26,7 @@ export default function AnimeDataProvider({ children }) {
       {
         title: "5 Centimeters Per Second",
         image:
-          "https://m.media-amazon.com/images/M/MV5BMTM1NjUyMDI3OV5BMl5BanBnXkFtZTcwNjg1ODkzMw@@._V1_.jpg",
+          "https://m.media-amazon.com/images/M/MV5BODVmZjhhYTYtYzRiOC00YzFiLThlZjMtZTQxNWY0MTI1MzlmXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg",
         genres: ["Drama", "Romance"],
         quote: "We shared the same view of the cherry blossoms in full bloom.",
         mood: "Nostalgic",
@@ -34,7 +34,7 @@ export default function AnimeDataProvider({ children }) {
       {
         title: "A Silent Voice",
         image:
-          "https://m.media-amazon.com/images/M/MV5BZGRkOGMxYTUtZTBhYS00NzI3LWEzMDQtOWRhMmNjNjJjMzM4XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
+          "https://upload.wikimedia.org/wikipedia/en/3/32/A_Silent_Voice_Film_Poster.jpg",
         genres: ["Drama", "Slice of Life"],
         quote: "No matter what happens tomorrow, I'm glad I met you today.",
         mood: "Poignant",
@@ -42,7 +42,7 @@ export default function AnimeDataProvider({ children }) {
       {
         title: "Wolf Children",
         image:
-          "https://m.media-amazon.com/images/M/MV5BMjEyOTk1MDk1Ml5BMl5BanBnXkFtZTcwNzAxNzMzNw@@._V1_.jpg",
+          "https://upload.wikimedia.org/wikipedia/en/9/9c/%C5%8Ckami_Kodomo_no_Ame_to_Yuki_poster.jpg",
         genres: ["Fantasy", "Slice of Life", "Drama"],
         quote: "Even if you're alone, you're not really alone.",
         mood: "Heartwarming",
@@ -51,7 +51,8 @@ export default function AnimeDataProvider({ children }) {
     summer: [
       {
         title: "Attack on Titan",
-        image: "https://i.imgur.com/JzQJQYz.jpg",
+        image:
+          "https://images.justwatch.com/poster/100348362/s718/season-1.jpg",
         genres: ["Action", "Drama", "Fantasy"],
         quote:
           "If you win, you live. If you lose, you die. If you don't fight, you can't win!",
@@ -59,14 +60,16 @@ export default function AnimeDataProvider({ children }) {
       },
       {
         title: "One Piece",
-        image: "https://i.imgur.com/JzQJQYz.jpg",
+        image:
+          "https://miro.medium.com/v2/resize:fit:1400/0*YX_RUxT7tpiGjKN6.jpg",
         genres: ["Action", "Adventure", "Comedy"],
         quote: "A man's dream will never die!",
         mood: "Adventurous",
       },
       {
         title: "Naruto",
-        image: "https://i.imgur.com/JzQJQYz.jpg",
+        image:
+          "https://m.media-amazon.com/images/M/MV5BZTNjOWI0ZTAtOGY1OS00ZGU0LWEyOWYtMjhkYjdlYmVjMDk2XkEyXkFqcGc@.V1_FMjpg_UX1000.jpg",
         genres: ["Action", "Adventure", "Martial Arts"],
         quote:
           "Hard work is worthless for those that don't believe in themselves.",
@@ -74,14 +77,16 @@ export default function AnimeDataProvider({ children }) {
       },
       {
         title: "My Hero Academia",
-        image: "https://i.imgur.com/JzQJQYz.jpg",
+        image:
+          "https://m.media-amazon.com/images/M/MV5BNzgxMzI3NzgtYzE2Zi00MzlmLThlNWEtNWVmZWEyZjNkZWYyXkEyXkFqcGc@.V1.jpg",
         genres: ["Action", "Superhero", "School"],
         quote: "It's fine now. Why? Because I am here!",
         mood: "Inspiring",
       },
       {
         title: "Demon Slayer",
-        image: "https://i.imgur.com/JzQJQYz.jpg",
+        image:
+          "https://images.justwatch.com/poster/320272945/s718/season-1.jpg",
         genres: ["Action", "Supernatural", "Historical"],
         quote:
           "No matter how many people you may lose, you have no choice but to go on living.",
@@ -91,7 +96,8 @@ export default function AnimeDataProvider({ children }) {
     autumn: [
       {
         title: "Death Note",
-        image: "https://i.imgur.com/JzQJQYz.jpg",
+        image:
+          "https://m.media-amazon.com/images/M/MV5BYTgyZDhmMTEtZDFhNi00MTc4LTg3NjUtYWJlNGE5Mzk2NzMxXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg",
         genres: ["Mystery", "Psychological", "Thriller"],
         quote:
           "In this world, there are very few people who actually trust each other.",
@@ -99,28 +105,32 @@ export default function AnimeDataProvider({ children }) {
       },
       {
         title: "Tokyo Ghoul",
-        image: "https://i.imgur.com/JzQJQYz.jpg",
+        image:
+          "https://m.media-amazon.com/images/M/MV5BZWI2NzZhMTItOTM3OS00NjcyLThmN2EtZGZjMjlhYWMwODMzXkEyXkFqcGc@.V1.jpg",
         genres: ["Action", "Horror", "Psychological"],
         quote: "It's not the world that's messed up; it's those of us in it.",
         mood: "Brooding",
       },
       {
         title: "Psycho-Pass",
-        image: "https://i.imgur.com/JzQJQYz.jpg",
+        image:
+          "https://m.media-amazon.com/images/M/MV5BNjQ1OTNkZGYtODVlMC00NWI0LWJiYjItMzM4M2U4NjY0ZTYwXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg",
         genres: ["Sci-Fi", "Psychological", "Police"],
         quote: "Justice is always an illusion brought about by those in power.",
         mood: "Thought-provoking",
       },
       {
         title: "Monster",
-        image: "https://i.imgur.com/JzQJQYz.jpg",
+        image:
+          "https://upload.wikimedia.org/wikipedia/en/2/2d/Monster_%28manga_-_promo_image%29.jpg",
         genres: ["Mystery", "Psychological", "Thriller"],
         quote: "Humans are the only animals who can choose not to reproduce.",
         mood: "Philosophical",
       },
       {
-        title: "Steins;Gate",
-        image: "https://i.imgur.com/JzQJQYz.jpg",
+        title: "Steins Gate",
+        image:
+          "https://m.media-amazon.com/images/M/MV5BZjI1YjZiMDUtZTI3MC00YTA5LWIzMmMtZmQ0NTZiYWM4NTYwXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg",
         genres: ["Sci-Fi", "Thriller"],
         quote:
           "No one knows what the future holds. That's why its potential is infinite.",
@@ -130,35 +140,40 @@ export default function AnimeDataProvider({ children }) {
     winter: [
       {
         title: "Violet Evergarden",
-        image: "https://i.imgur.com/JzQJQYz.jpg",
+        image:
+          "https://m.media-amazon.com/images/M/MV5BMWUwNDFiNjQtYjQ0MC00MTcxLWE0MGQtNTdkYTlhZGU2NDFmXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg",
         genres: ["Drama", "Fantasy"],
         quote: "I want to know what 'I love you' means.",
         mood: "Melancholic",
       },
       {
         title: "Spirited Away",
-        image: "https://i.imgur.com/JzQJQYz.jpg",
+        image:
+          "https://m.media-amazon.com/images/M/MV5BNTEyNmEwOWUtYzkyOC00ZTQ4LTllZmUtMjk0Y2YwOGUzYjRiXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg",
         genres: ["Adventure", "Fantasy", "Supernatural"],
         quote: "Once you've met someone you never really forget them.",
         mood: "Whimsical",
       },
       {
         title: "Erased",
-        image: "https://i.imgur.com/JzQJQYz.jpg",
+        image:
+          "https://m.media-amazon.com/images/M/MV5BZWQ2YmI5NWMtZTY2Mi00MGUxLWFhMmEtYjVjZjMwOTNkOThjXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg",
         genres: ["Mystery", "Psychological", "Supernatural"],
         quote: "If you could change the past, what would you do differently?",
         mood: "Reflective",
       },
       {
         title: "A Silent Voice",
-        image: "https://i.imgur.com/JzQJQYz.jpg",
+        image:
+          "https://m.media-amazon.com/images/M/MV5BYzQ2YTM2NmYtZjEzMS00M2NiLWI3NjQtNjIyMDEzMmQ1ZDkxXkEyXkFqcGc@.V1.jpg",
         genres: ["Drama", "Slice of Life"],
         quote: "No matter what happens tomorrow, I'm glad I met you today.",
         mood: "Poignant",
       },
       {
         title: "Natsume's Book of Friends",
-        image: "https://i.imgur.com/JzQJQYz.jpg",
+        image:
+          "https://upload.wikimedia.org/wikipedia/en/8/88/Natsume%27s_Book_of_Friends_1.png",
         genres: ["Slice of Life", "Supernatural"],
         quote: "Even if you're alone, you're not really alone.",
         mood: "Comforting",
@@ -168,36 +183,76 @@ export default function AnimeDataProvider({ children }) {
 
   const theme = {
     rainy: {
-      background: "from-[#6b7280] via-[#4b5563] to-[#374151]", // Cloudy gray gradient
+      background: "from-[#6b7280] via-[#4b5563] to-[#374151]",
       text: "text-white",
       icon: "🌧️",
       accent: "bg-blue-400",
       card: "bg-slate-700/80",
       description: "Overcast sky with soft rain tones",
+      controller: {
+        slow: "bg-gray-100 text-black-800",
+        normal: "bg-gray-200 text-black-900",
+        fast: "bg-gray-300 text-black-900",
+      },
+      controllerHover: {
+        slow: "hover:bg-gray-200",
+        normal: "hover:bg-gray-300",
+        fast: "hover:bg-gray-400",
+      },
     },
     summer: {
-      background: "from-[#38bdf8] via-[#0ea5e9] to-[#0284c7]", // Bright clear blue sky
-      text: "text-gray-900",
+      background: "from-[#38bdf8] via-[#0ea5e9] to-[#0284c7]",
+      text: "text-blue-900",
       icon: "☀️",
-      accent: "bg-amber-300",
+      accent: "bg-rose-400",
       card: "bg-sky-100/80",
       description: "Vibrant summer sky with golden sunlight",
+      controller: {
+        slow: "bg-amber-100 text-amber-800",
+        normal: "bg-amber-200 text-amber-900",
+        fast: "bg-amber-300 text-amber-900",
+      },
+      controllerHover: {
+        slow: "hover:bg-amber-200",
+        normal: "hover:bg-amber-300",
+        fast: "hover:bg-amber-400",
+      },
     },
     autumn: {
-      background: "from-[#a8a29e] via-[#78716c] to-[#57534e]", // Hazy autumn sky
+      background: "from-[#a8a29e] via-[#78716c] to-[#57534e]",
       text: "text-amber-50",
       icon: "🍂",
       accent: "bg-amber-500",
       card: "bg-stone-600/80",
       description: "Soft muted sky with autumn haze",
+      controller: {
+        slow: "bg-orange-100 text-orange-800",
+        normal: "bg-orange-200 text-orange-900",
+        fast: "bg-orange-300 text-orange-900",
+      },
+      controllerHover: {
+        slow: "hover:bg-orange-200",
+        normal: "hover:bg-orange-300",
+        fast: "hover:bg-orange-400",
+      },
     },
     winter: {
-      background: "from-[#e0f2fe] via-[#bae6fd] to-[#7dd3fc]", // Pale winter sky
-      text: "text-gray-800",
+      background: "from-[#0a1a30] via-[#0a3d6b] to-[#0a5fac]",
+      text: "text-gray-200",
       icon: "❄️",
       accent: "bg-cyan-400",
       card: "bg-slate-200/80",
       description: "Crisp pale blue winter atmosphere",
+      controller: {
+        slow: "bg-blue-100 text-blue-800",
+        normal: "bg-blue-200 text-blue-900",
+        fast: "bg-blue-300 text-blue-900",
+      },
+      controllerHover: {
+        slow: "hover:bg-blue-200",
+        normal: "hover:bg-blue-300",
+        fast: "hover:bg-blue-400",
+      },
     },
   };
   const footer = {

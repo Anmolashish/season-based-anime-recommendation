@@ -26,7 +26,7 @@ const AnimeCard = ({ anime }) => {
   };
 
   return (
-    <div className="w-70 max-md:w-60  max-w-full bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2 m-4 group ">
+    <div className="w-70 max-md:w-60 z-20  max-w-full bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2 m-4 group ">
       {/* Image with overlay effect */}
       <div className="relative max-md:h-40 h-50 overflow-hidden">
         <img

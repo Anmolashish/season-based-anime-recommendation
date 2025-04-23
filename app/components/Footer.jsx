@@ -19,7 +19,7 @@ export default function Footer({ season }) {
           src={currentTheme.image} // Changed to use seasonal image
           alt={`${season} landscape`}
           fill
-          className="object-cover object-bottom"
+          className="object-cover object-top"
           priority
         />
       </div>
@@ -39,14 +39,6 @@ export default function Footer({ season }) {
 
       {/* CSS */}
       <style jsx global>{`
-        @keyframes snowfall {
-          0% {
-            transform: translateY(-10vh) rotate(0deg);
-          }
-          100% {
-            transform: translateY(100vh) rotate(360deg);
-          }
-        }
         .snowflake {
           position: absolute;
           color: white;

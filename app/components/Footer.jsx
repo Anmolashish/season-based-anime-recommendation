@@ -14,7 +14,7 @@ export default function Footer({ season }) {
   return (
     <div className={`relative h-[60vh] overflow-hidden `}>
       {/* Mountain Background - Touching base */}
-      <div className="absolute bottom-0 w-full h-[100%] mt-[10px] z-10">
+      <div className="absolute bottom-0 w-full h-[100%] z-10 ">
         <Image
           src={currentTheme.image} // Changed to use seasonal image
           alt={`${season} landscape`}

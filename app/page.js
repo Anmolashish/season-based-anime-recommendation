@@ -4,6 +4,6 @@ import Jagjeet from "./components/Jagjeet";
 
 export default function Home() {
   return <>
-  <Jagjeet/>
+  Hello Hello
   </>;
 }

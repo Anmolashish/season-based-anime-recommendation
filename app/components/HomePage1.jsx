@@ -46,7 +46,9 @@ export default function HomePage1({ season }) {
               ></div>
             </div>
           </div>
-
+          <p className={` ${currenttext} text-center text-lg mb-6 p-3`}>
+            {theme[season].description}
+          </p>
           {/* Subtle background highlight on hover */}
           <div className="absolute inset-x-0 top-1/2 h-8 -translate-y-1/2 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
         </div>
@@ -96,6 +98,9 @@ export default function HomePage1({ season }) {
               ></div>
             </div>
           </div>
+          <p className={` ${currenttext} text-center text-lg mb-6 p-3`}>
+            {theme[season].description}
+          </p>
 
           {/* Subtle background highlight on hover */}
           <div className="absolute inset-x-0 top-1/2 h-8 -translate-y-1/2 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>

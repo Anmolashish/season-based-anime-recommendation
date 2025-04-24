@@ -221,7 +221,7 @@ export default function AnimeDataProvider({ children }) {
       },
     },
     autumn: {
-      background: "bg-gradient-to-br from-[#eab308] to-[#ea580c]",
+      background: "from-[#c97b63] via-[#d6a46c] to-[#b4845c]",
       text: "text-amber-50",
       icon: "🍂",
       accent: "bg-amber-500",
@@ -293,8 +293,8 @@ export default function AnimeDataProvider({ children }) {
     ],
   };
   const seasonalTheme = {
-    summer: { image: "/Images/summer-footer.png" },
-    winter: { image: "/Images/winter-footer.png" },
+    summer: { image: "/Images/summer_footer.png" },
+    winter: { image: "/Images/pngwing.com.png" },
     autumn: { image: "/Images/pngwing.com.png" },
     rainy: { image: "/Images/image-from-rawpixel-id-6757519-png.png" },
   };

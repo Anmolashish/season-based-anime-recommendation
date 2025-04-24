@@ -151,7 +151,7 @@ export default function SeasonalGateway() {
         {/* Surprise Me Button Section */}
         <div className="mt-auto pt-12 text-center">
           <p className="text-gray-600 mb-3 text-sm">
-            Can't decide which season to explore first?
+            Can&apos;t decide which season to explore first?
           </p>
           <button
             onClick={handleSurpriseMe}

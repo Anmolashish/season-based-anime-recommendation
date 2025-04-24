@@ -292,7 +292,7 @@ export default function AnimeDataProvider({ children }) {
     summer: { image: "/Images/summer.png" },
     winter: { image: "/Images/pngwing.com.png" },
     autumn: [],
-    rainy: [],
+    rainy: { image: "/Images/image-from-rawpixel-id-6757519-png.png" },
   };
   return (
     <AnimeDataContext.Provider

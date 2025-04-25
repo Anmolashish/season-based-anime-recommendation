@@ -169,7 +169,7 @@ export default function AnimeDataProvider({ children }) {
           "A college student becomes half-ghoul after an encounter with one and must navigate both worlds.",
         status: "Completed",
         episodes: 12,
-        trailerUrl: "https://www.youtube.com/watch?v=vkR0ueJmFr4",
+        trailerUrl: "https://www.youtube.com/watch?v=vGuQeQsoRgU",
       },
       {
         title: "Psycho-Pass",
@@ -182,7 +182,7 @@ export default function AnimeDataProvider({ children }) {
           "In a dystopian future, inspectors work to apprehend criminals before they commit crimes using a predictive system.",
         status: "Completed",
         episodes: 22,
-        trailerUrl: "https://www.youtube.com/watch?v=K4zm30yeHHE",
+        trailerUrl: "https://www.youtube.com/watch?v=YzuJnyebc40",
       },
       {
         title: "Monster",
@@ -195,7 +195,7 @@ export default function AnimeDataProvider({ children }) {
           "A brilliant neurosurgeon saves a boy's life, only to discover years later that the boy became a serial killer.",
         status: "Completed",
         episodes: 74,
-        trailerUrl: "https://www.youtube.com/watch?v=9gSQg1i_q2g",
+        trailerUrl: "https://www.youtube.com/watch?v=9aXTKhnockM",
       },
       {
         title: "Steins Gate",

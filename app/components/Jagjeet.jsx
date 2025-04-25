@@ -20,7 +20,7 @@ const SEASONS = {
   rainy: {
     name: "Rainy",
     particleType: "raindrop",
-    icon: "🌸",
+    icon: "🌧️",
 
     description: "where every story blossoms like cherry blossoms",
     accentColor: "border-[#45b29a]",
@@ -30,24 +30,24 @@ const SEASONS = {
     bgImage: "/Images/cloud.png",
     overlay: "bg-black/20",
   },
-    summer: {
-      name: 'Summer',
-      particleType: 'sunbeam',
-      icon: '☀️',
-      description: 'where every story shines bright like the summer sun',
-      accentColor: 'border-[#ff6b35]',
-      textColor: 'text-[#422b2b]',
-      // bgColor: 'bg-[#39CAF2]', // Keeping original color
-      path: 'summer',
-      bgImage: '/Images/summer_coc.png',
-      overlay: 'bg-black/15',
-      // Add this to prevent any transitions
-      staticStyles: 'transition-none'
-    },
+  summer: {
+    name: "Summer",
+    particleType: "sunbeam",
+    icon: "☀️",
+    description: "where every story shines bright like the summer sun",
+    accentColor: "border-[#ff6b35]",
+    textColor: "text-[#422b2b]",
+    // bgColor: 'bg-[#39CAF2]', // Keeping original color
+    path: "summer",
+    bgImage: "/Images/summer_coc.png",
+    overlay: "bg-black/15",
+    // Add this to prevent any transitions
+    staticStyles: "transition-none",
+  },
   autumn: {
     name: "Autumn",
     particleType: "leaf",
-    // icon: '🍂',
+    icon: "🍂",
     // bgGradient: 'bg-gradient-to-br from-[#ff8c42] to-[#ffb347]',
     description: "where every story drifts like falling leaves",
     accentColor: "border-[#e2711d]",

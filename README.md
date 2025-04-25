@@ -1,4 +1,4 @@
-```md
+
 ##Seasonal Anime Recommendations - Hackathon Project
 
 ##Why We Created This Project
@@ -13,7 +13,6 @@ We developed this seasonal anime recommendation website because:
 ---
 
 ## 📁 Project Directory Structure
-```
 
 EXPLORER
 ├── .next/ # Next.js build output

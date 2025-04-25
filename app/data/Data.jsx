@@ -224,7 +224,7 @@ export default function AnimeDataProvider({ children }) {
           "A former child soldier becomes an Auto Memory Doll, writing letters that connect people's feelings.",
         status: "Completed",
         episodes: 13,
-        trailerUrl: "https://www.youtube.com/watch?v=9W3JcA1xwC4",
+        trailerUrl: "https://youtu.be/BUfSen2rYQs?si=C9dvEdL1vEVIwwWg",
       },
       {
         title: "Spirited Away",
@@ -237,7 +237,7 @@ export default function AnimeDataProvider({ children }) {
           "A young girl trapped in a spirit world works at a bathhouse to free herself and her parents.",
         status: "Movie",
         episodes: 1,
-        trailerUrl: "https://www.youtube.com/watch?v=ByXuk9QqQkk",
+        trailerUrl: "https://youtu.be/ByXuk9QqQkk?si=129KuDEnc7y6VlpJ",
       },
       {
         title: "Erased",
@@ -250,7 +250,7 @@ export default function AnimeDataProvider({ children }) {
           "A man with the ability to travel back in time tries to prevent a series of murders from his childhood.",
         status: "Completed",
         episodes: 12,
-        trailerUrl: "https://www.youtube.com/watch?v=YJm7Y7JMK1c",
+        trailerUrl: "https://youtu.be/DwmxEAWjTQQ?si=LOMwZxn4WjySCCYK",
       },
       {
         title: "A Silent Voice",
@@ -263,7 +263,7 @@ export default function AnimeDataProvider({ children }) {
           "A former bully seeks redemption by reconnecting with the deaf girl he tormented in elementary school.",
         status: "Movie",
         episodes: 1,
-        trailerUrl: "https://www.youtube.com/watch?v=nfK6UgLra7g",
+        trailerUrl: "https://youtu.be/TQK9By9qQiw?si=StL5KtZNoFAepBj-",
       },
       {
         title: "Natsume's Book of Friends",
@@ -276,7 +276,7 @@ export default function AnimeDataProvider({ children }) {
           "A boy who can see spirits inherits a book that binds spirits to his grandmother's will and decides to free them.",
         status: "Completed",
         episodes: 74,
-        trailerUrl: "https://www.youtube.com/watch?v=G6Y3flnD2tI",
+        trailerUrl: "https://youtu.be/3x1eH-wUNnM?si=ZSHhF4FwXctyYhi0",
       },
     ],
   };

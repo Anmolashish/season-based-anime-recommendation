@@ -29,7 +29,7 @@ const Homepage2 = (props) => {
 
   return (
     <main className="min-h-screen">
-      <div className="container my-10 px-4">
+      <div className="my-10 px-4">
         <AnimeGallery
           anime={allAnime}
           activeSeason={activeSeason}

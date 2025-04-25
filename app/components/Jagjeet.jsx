@@ -39,7 +39,7 @@ const SEASONS = {
       textColor: 'text-[#422b2b]',
       // bgColor: 'bg-[#39CAF2]', // Keeping original color
       path: 'summer',
-      bgImage: '/Images/summer_hero_section.png',
+      bgImage: '/Images/summer_coc.png',
       overlay: 'bg-black/15',
       // Add this to prevent any transitions
       staticStyles: 'transition-none'

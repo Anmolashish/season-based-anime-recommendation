@@ -13,6 +13,11 @@ export default function AnimeDataProvider({ children }) {
         genres: ["Drama", "Romance", "Slice of Life"],
         quote: "On rainy days, I hear the voice of the sky.",
         mood: "Melancholic",
+        synopsis:
+          "A 15-year-old boy and 27-year-old woman find an unlikely friendship on rainy mornings in a Japanese garden.",
+        status: "Movie",
+        episodes: 1,
+        trailerUrl: "https://www.youtube.com/watch?v=WZvGmS50XaY",
       },
       {
         title: "Weathering With You",
@@ -22,6 +27,11 @@ export default function AnimeDataProvider({ children }) {
         quote:
           "The weather is crazy, but maybe the world was crazy from the beginning.",
         mood: "Hopeful",
+        synopsis:
+          "A high-school boy runs away to Tokyo and befriends a girl who can manipulate the weather.",
+        status: "Movie",
+        episodes: 1,
+        trailerUrl: "https://www.youtube.com/watch?v=Q6iK6DjV_iE",
       },
       {
         title: "5 Centimeters Per Second",
@@ -30,6 +40,11 @@ export default function AnimeDataProvider({ children }) {
         genres: ["Drama", "Romance"],
         quote: "We shared the same view of the cherry blossoms in full bloom.",
         mood: "Nostalgic",
+        synopsis:
+          "A story about childhood friends Takaki and Akari and the distance that grows between them.",
+        status: "Movie",
+        episodes: 3,
+        trailerUrl: "https://www.youtube.com/watch?v=wdM7athAem0",
       },
       {
         title: "A Silent Voice",
@@ -38,6 +53,11 @@ export default function AnimeDataProvider({ children }) {
         genres: ["Drama", "Slice of Life"],
         quote: "No matter what happens tomorrow, I'm glad I met you today.",
         mood: "Poignant",
+        synopsis:
+          "A former bully seeks redemption by reconnecting with the deaf girl he tormented in elementary school.",
+        status: "Movie",
+        episodes: 1,
+        trailerUrl: "https://www.youtube.com/watch?v=nfK6UgLra7g",
       },
       {
         title: "Wolf Children",
@@ -46,6 +66,11 @@ export default function AnimeDataProvider({ children }) {
         genres: ["Fantasy", "Slice of Life", "Drama"],
         quote: "Even if you're alone, you're not really alone.",
         mood: "Heartwarming",
+        synopsis:
+          "A young mother raises her half-wolf children in the countryside after their werewolf father dies.",
+        status: "Movie",
+        episodes: 1,
+        trailerUrl: "https://www.youtube.com/watch?v=8WQqcy5xPlQ",
       },
     ],
     summer: [
@@ -57,6 +82,11 @@ export default function AnimeDataProvider({ children }) {
         quote:
           "If you win, you live. If you lose, you die. If you don't fight, you can't win!",
         mood: "Intense",
+        synopsis:
+          "Humanity fights for survival against man-eating Titans in this dark fantasy series.",
+        status: "Completed",
+        episodes: 89,
+        trailerUrl: "https://www.youtube.com/watch?v=MGRm4IzK1SQ",
       },
       {
         title: "One Piece",
@@ -65,6 +95,11 @@ export default function AnimeDataProvider({ children }) {
         genres: ["Action", "Adventure", "Comedy"],
         quote: "A man's dream will never die!",
         mood: "Adventurous",
+        synopsis:
+          "Monkey D. Luffy and his pirate crew search for the ultimate treasure to become Pirate King.",
+        status: "Ongoing",
+        episodes: "1000+",
+        trailerUrl: "https://www.youtube.com/watch?v=JufLdL0mImo",
       },
       {
         title: "Naruto",
@@ -74,6 +109,11 @@ export default function AnimeDataProvider({ children }) {
         quote:
           "Hard work is worthless for those that don't believe in themselves.",
         mood: "Motivational",
+        synopsis:
+          "Naruto Uzumaki, a young ninja, seeks recognition and dreams of becoming the Hokage.",
+        status: "Completed",
+        episodes: 220,
+        trailerUrl: "https://www.youtube.com/watch?v=-G9BqkgZXRA",
       },
       {
         title: "My Hero Academia",
@@ -82,6 +122,11 @@ export default function AnimeDataProvider({ children }) {
         genres: ["Action", "Superhero", "School"],
         quote: "It's fine now. Why? Because I am here!",
         mood: "Inspiring",
+        synopsis:
+          "In a world of superpowers, a quirkless boy inherits powers from the world's greatest hero.",
+        status: "Ongoing",
+        episodes: "100+",
+        trailerUrl: "https://www.youtube.com/watch?v=w1A3tLN9j7s",
       },
       {
         title: "Demon Slayer",
@@ -91,6 +136,11 @@ export default function AnimeDataProvider({ children }) {
         quote:
           "No matter how many people you may lose, you have no choice but to go on living.",
         mood: "Determined",
+        synopsis:
+          "Tanjiro Kamado becomes a demon slayer to avenge his family and cure his demon-turned sister.",
+        status: "Ongoing",
+        episodes: 44,
+        trailerUrl: "https://www.youtube.com/watch?v=VQGCKyvzIM4",
       },
     ],
     autumn: [
@@ -102,6 +152,11 @@ export default function AnimeDataProvider({ children }) {
         quote:
           "In this world, there are very few people who actually trust each other.",
         mood: "Dark",
+        synopsis:
+          "A high school student discovers a supernatural notebook that allows him to kill anyone by writing their name.",
+        status: "Completed",
+        episodes: 37,
+        trailerUrl: "https://www.youtube.com/watch?v=NlJZ-YgAt-c",
       },
       {
         title: "Tokyo Ghoul",
@@ -110,6 +165,11 @@ export default function AnimeDataProvider({ children }) {
         genres: ["Action", "Horror", "Psychological"],
         quote: "It's not the world that's messed up; it's those of us in it.",
         mood: "Brooding",
+        synopsis:
+          "A college student becomes half-ghoul after an encounter with one and must navigate both worlds.",
+        status: "Completed",
+        episodes: 12,
+        trailerUrl: "https://www.youtube.com/watch?v=vkR0ueJmFr4",
       },
       {
         title: "Psycho-Pass",
@@ -118,6 +178,11 @@ export default function AnimeDataProvider({ children }) {
         genres: ["Sci-Fi", "Psychological", "Police"],
         quote: "Justice is always an illusion brought about by those in power.",
         mood: "Thought-provoking",
+        synopsis:
+          "In a dystopian future, inspectors work to apprehend criminals before they commit crimes using a predictive system.",
+        status: "Completed",
+        episodes: 22,
+        trailerUrl: "https://www.youtube.com/watch?v=K4zm30yeHHE",
       },
       {
         title: "Monster",
@@ -126,6 +191,11 @@ export default function AnimeDataProvider({ children }) {
         genres: ["Mystery", "Psychological", "Thriller"],
         quote: "Humans are the only animals who can choose not to reproduce.",
         mood: "Philosophical",
+        synopsis:
+          "A brilliant neurosurgeon saves a boy's life, only to discover years later that the boy became a serial killer.",
+        status: "Completed",
+        episodes: 74,
+        trailerUrl: "https://www.youtube.com/watch?v=9gSQg1i_q2g",
       },
       {
         title: "Steins Gate",
@@ -135,6 +205,11 @@ export default function AnimeDataProvider({ children }) {
         quote:
           "No one knows what the future holds. That's why its potential is infinite.",
         mood: "Mind-bending",
+        synopsis:
+          "A group of friends accidentally create a time machine and must deal with the consequences of altering the past.",
+        status: "Completed",
+        episodes: 24,
+        trailerUrl: "https://www.youtube.com/watch?v=uMYhjVwp0Fk",
       },
     ],
     winter: [
@@ -145,6 +220,11 @@ export default function AnimeDataProvider({ children }) {
         genres: ["Drama", "Fantasy"],
         quote: "I want to know what 'I love you' means.",
         mood: "Melancholic",
+        synopsis:
+          "A former child soldier becomes an Auto Memory Doll, writing letters that connect people's feelings.",
+        status: "Completed",
+        episodes: 13,
+        trailerUrl: "https://www.youtube.com/watch?v=9W3JcA1xwC4",
       },
       {
         title: "Spirited Away",
@@ -153,6 +233,11 @@ export default function AnimeDataProvider({ children }) {
         genres: ["Adventure", "Fantasy", "Supernatural"],
         quote: "Once you've met someone you never really forget them.",
         mood: "Whimsical",
+        synopsis:
+          "A young girl trapped in a spirit world works at a bathhouse to free herself and her parents.",
+        status: "Movie",
+        episodes: 1,
+        trailerUrl: "https://www.youtube.com/watch?v=ByXuk9QqQkk",
       },
       {
         title: "Erased",
@@ -161,6 +246,11 @@ export default function AnimeDataProvider({ children }) {
         genres: ["Mystery", "Psychological", "Supernatural"],
         quote: "If you could change the past, what would you do differently?",
         mood: "Reflective",
+        synopsis:
+          "A man with the ability to travel back in time tries to prevent a series of murders from his childhood.",
+        status: "Completed",
+        episodes: 12,
+        trailerUrl: "https://www.youtube.com/watch?v=YJm7Y7JMK1c",
       },
       {
         title: "A Silent Voice",
@@ -169,6 +259,11 @@ export default function AnimeDataProvider({ children }) {
         genres: ["Drama", "Slice of Life"],
         quote: "No matter what happens tomorrow, I'm glad I met you today.",
         mood: "Poignant",
+        synopsis:
+          "A former bully seeks redemption by reconnecting with the deaf girl he tormented in elementary school.",
+        status: "Movie",
+        episodes: 1,
+        trailerUrl: "https://www.youtube.com/watch?v=nfK6UgLra7g",
       },
       {
         title: "Natsume's Book of Friends",
@@ -177,6 +272,11 @@ export default function AnimeDataProvider({ children }) {
         genres: ["Slice of Life", "Supernatural"],
         quote: "Even if you're alone, you're not really alone.",
         mood: "Comforting",
+        synopsis:
+          "A boy who can see spirits inherits a book that binds spirits to his grandmother's will and decides to free them.",
+        status: "Completed",
+        episodes: 74,
+        trailerUrl: "https://www.youtube.com/watch?v=G6Y3flnD2tI",
       },
     ],
   };
@@ -293,12 +393,9 @@ export default function AnimeDataProvider({ children }) {
     ],
   };
   const seasonalTheme = {
-    summer: { image: "/Images/summer_footer.png" },
-    winter: { image: "/Images/pngwing.com.png" },
-    autumn: {
-      image:
-        "/Images/png-autumn-tree-shedding-leaves-gracefully_53876-455344 (3).png",
-    },
+    summer: { image: "/Images/summer-footer.png" },
+    winter: { image: "/Images/winter-footer.png" },
+    autumn: { image: "/Images/pngwing.com.png" },
     rainy: { image: "/Images/image-from-rawpixel-id-6757519-png.png" },
   };
   return (

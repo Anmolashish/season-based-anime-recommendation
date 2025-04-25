@@ -5,6 +5,7 @@ import HomePage1 from "./HomePage1";
 import Footer from "./Footer";
 import WeatherControls from "./WeatherControls";
 import Homepage2 from "./Homepage2";
+import Jagjeet from "./Jagjeet";
 
 export default function MainSection(props) {
   const { theme } = useContext(AnimeDataContext);
@@ -229,6 +230,7 @@ export default function MainSection(props) {
       </div>
 
       {/* Main Content */}
+      <Jagjeet season={props.season}/>
       <HomePage1 season={props.season} />
       <Homepage2 season={props.season}/>
       <Footer season={props.season} />

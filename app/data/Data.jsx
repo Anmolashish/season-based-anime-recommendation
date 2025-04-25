@@ -189,6 +189,7 @@ export default function AnimeDataProvider({ children }) {
       accent: "bg-blue-400",
       card: "bg-slate-700/80",
       description: "Overcast sky with soft rain tones",
+      description1: "Gentle rains and quiet reflections",
       controller: {
         slow: "bg-gray-100 text-black-800",
         normal: "bg-gray-200 text-black-900",
@@ -207,6 +208,7 @@ export default function AnimeDataProvider({ children }) {
       accent: "bg-rose-400",
       card: "bg-sky-100/80",
       description: "Vibrant summer sky with golden sunlight",
+      description1: "Sunshine and adventure",
       controller: {
         slow: "bg-amber-100 text-amber-800",
         normal: "bg-amber-200 text-amber-900",
@@ -225,6 +227,7 @@ export default function AnimeDataProvider({ children }) {
       accent: "bg-amber-500",
       card: "bg-stone-600/80",
       description: "Soft muted sky with autumn haze",
+      description1: "Golden hues and cozy moments",
       controller: {
         slow: "bg-orange-100 text-orange-800",
         normal: "bg-orange-200 text-orange-900",
@@ -243,6 +246,7 @@ export default function AnimeDataProvider({ children }) {
       accent: "bg-cyan-400",
       card: "bg-slate-200/80",
       description: "Crisp pale blue winter atmosphere",
+      description1: "Snowy landscapes and warmth",
       controller: {
         slow: "bg-blue-100 text-blue-800",
         normal: "bg-blue-200 text-blue-900",
@@ -289,7 +293,7 @@ export default function AnimeDataProvider({ children }) {
     ],
   };
   const seasonalTheme = {
-    summer: { image: "/Images/pngwing.com.png" },
+    summer: { image: "/Images/summer_footer.png" },
     winter: { image: "/Images/pngwing.com.png" },
     autumn: {
       image:

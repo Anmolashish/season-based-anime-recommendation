@@ -25,7 +25,7 @@ export default function Footer({ season }) {
       </div>
 
       {/* Seasonal Anime Recommendations */}
-      <div className="absolute bottom-24 left-4 z-20 bg-white/80 p-3 rounded-lg backdrop-blur-sm max-w-xs">
+      <div className="absolute bottom-24 left-4 z-20 bg-white/80 p-5 rounded-lg backdrop-blur-sm max-w-xs">
         <h4 className="font-bold text-xl text-gray-800 mb-2">
           {season.charAt(0).toUpperCase() + season.slice(1)} Anime
           Recommendations:

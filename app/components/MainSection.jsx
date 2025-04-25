@@ -230,9 +230,9 @@ export default function MainSection(props) {
       </div>
 
       {/* Main Content */}
-      <Jagjeet season={props.season}/>
+      <Jagjeet season={props.season} />
       <HomePage1 season={props.season} />
-      <Homepage2 season={props.season}/>
+      <Homepage2 season={props.season} />
       <Footer season={props.season} />
 
       {/* CSS for All Animations */}

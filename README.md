@@ -100,13 +100,4 @@ yarn start
 
 ---
 
-## ❤️ Final Words
 
-We hope this website helps anime fans discover the perfect seasonal shows that match their current mood and vibe!
-
-```
-
----
-
-Let me know if you want me to **turn this into a real README.md file for download**, or add things like shields.io badges, license, screenshots, or contributors section.
-```

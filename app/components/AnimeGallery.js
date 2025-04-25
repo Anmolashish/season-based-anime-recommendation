@@ -9,16 +9,6 @@ export default function AnimeGallery({ anime, activeSeason, season }) {
   const [touchStartX, setTouchStartX] = useState(0);
   const [touchScrollLeft, setTouchScrollLeft] = useState(0);
 
-  useEffect(() => {
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-
-    checkMobile();
-    window.addEventListener("resize", checkMobile);
-    return () => window.removeEventListener("resize", checkMobile);
-  }, []);
-
   const filteredAnime = anime.filter((item) => item.season === season);
 
   // Create duplicated rows for seamless looping
@@ -86,7 +76,7 @@ export default function AnimeGallery({ anime, activeSeason, season }) {
   };
 
   return (
-    <div className="w-full overflow-hidden space-y-3 py-6">
+    <div className="w-full min-h-[70vh] overflow-hidden space-y-3 py-6">
       {rows.map((row, rowIndex) => (
         <div
           key={rowIndex}

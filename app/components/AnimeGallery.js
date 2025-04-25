@@ -1,124 +1,41 @@
 "use client";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 
-export default function AnimeGallery({ anime, activeSeason, season }) {
-  const rowRefs = useRef([]);
-  const animationId = useRef(null);
-  const [hoveredRow, setHoveredRow] = useState(null);
+export default function AnimeGallery({ anime, season }) {
   const [isMobile, setIsMobile] = useState(false);
-  const [touchStartX, setTouchStartX] = useState(0);
-  const [touchScrollLeft, setTouchScrollLeft] = useState(0);
-
-  const filteredAnime = anime.filter((item) => item.season === season);
-
-  // Create duplicated rows for seamless looping
-  const rows = [];
-  const rowCount = isMobile ? 2 : 4;
-  const itemsPerRow = Math.max(
-    isMobile ? 4 : 8,
-    Math.ceil(filteredAnime.length / rowCount)
-  );
-
-  for (let i = 0; i < rowCount; i++) {
-    const rowItems = filteredAnime.slice(
-      i * itemsPerRow,
-      (i + 1) * itemsPerRow
-    );
-    // Only duplicate if we have enough items to need scrolling
-    rows.push(
-      rowItems.length > (isMobile ? 3 : 6)
-        ? [...rowItems, ...rowItems, ...rowItems]
-        : rowItems
-    );
-  }
-
-  const animate = () => {
-    rowRefs.current.forEach((row, index) => {
-      if (row && hoveredRow !== index && !isMobile) {
-        const direction = index % 2 === 0 ? -1 : 1;
-        const speed = 1 / 2;
-        row.scrollLeft += speed * direction;
-
-        // Reset scroll position when reaching the end for seamless looping
-        if (row.scrollLeft >= (row.scrollWidth / 3) * 2) {
-          row.scrollLeft -= row.scrollWidth / 3;
-        } else if (row.scrollLeft <= 0) {
-          row.scrollLeft += row.scrollWidth / 3;
-        }
-      }
-    });
-    animationId.current = requestAnimationFrame(animate);
-  };
 
   useEffect(() => {
-    animationId.current = requestAnimationFrame(animate);
-    return () => cancelAnimationFrame(animationId.current);
-  }, [hoveredRow, filteredAnime, isMobile]);
+    const checkIfMobile = () => setIsMobile(window.innerWidth < 768);
+    checkIfMobile();
+    window.addEventListener("resize", checkIfMobile);
+    return () => window.removeEventListener("resize", checkIfMobile);
+  }, []);
 
-  // Mobile touch handlers
-  const handleTouchStart = (e, rowIndex) => {
-    const touch = e.touches[0];
-    setTouchStartX(touch.clientX);
-    setTouchScrollLeft(rowRefs.current[rowIndex]?.scrollLeft || 0);
-    cancelAnimationFrame(animationId.current);
-  };
-
-  const handleTouchMove = (e, rowIndex) => {
-    if (!rowRefs.current[rowIndex]) return;
-    const touch = e.touches[0];
-    const x = touch.clientX;
-    const walk = (x - touchStartX) * 2;
-    rowRefs.current[rowIndex].scrollLeft = touchScrollLeft - walk;
-  };
-
-  const handleTouchEnd = () => {
-    animationId.current = requestAnimationFrame(animate);
-  };
+  const filteredAnime = anime
+    .filter((item) => item.season === season)
+    .slice(0, 9);
 
   return (
-    <div className="w-full min-h-[70vh] overflow-hidden space-y-3 py-6">
-      {rows.map((row, rowIndex) => (
-        <div
-          key={rowIndex}
-          ref={(el) => (rowRefs.current[rowIndex] = el)}
-          className={`flex overflow-x-auto scrollbar-hide w-full ${
-            isMobile ? "snap-x snap-mandatory" : ""
-          }`}
-          onMouseEnter={() => !isMobile && setHoveredRow(rowIndex)}
-          onMouseLeave={() => !isMobile && setHoveredRow(null)}
-          onTouchStart={(e) => isMobile && handleTouchStart(e, rowIndex)}
-          onTouchMove={(e) => isMobile && handleTouchMove(e, rowIndex)}
-          onTouchEnd={handleTouchEnd}
-        >
-          {row.map((anime, index) => (
-            <div
-              key={`${rowIndex}-${index}`}
-              className={`flex-shrink-0 ${
-                isMobile
-                  ? "w-[45vw] min-w-[45vw] h-[25vw] snap-center mx-2"
-                  : "w-[22vw] min-w-[22vw] h-[12.5vw] mx-2"
-              } rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105 z-20`}
-            >
-              <div className="w-full h-0 pb-[56.25%] relative">
-                <img
-                  src={anime.image}
-                  alt={anime.title || "Anime image"}
-                  className="absolute top-0 left-0 w-full h-full object-cover"
-                  loading="lazy"
-                  draggable="false"
-                />
-                {isMobile && (
-                  <div className="absolute inset-0 flex items-end p-2 bg-gradient-to-t from-black/70 to-transparent">
-                    <span className="text-white text-sm font-bold truncate w-full">
-                      {anime.title}
-                    </span>
-                  </div>
-                )}
-              </div>
-            </div>
-          ))}
-        </div>
-      ))}
+    <div className="w-full min-h-screen p-2">
+      <div
+        className={`grid  h-screen z-30  ${
+          isMobile ? "grid-cols-3" : "grid-cols-3 md:grid-cols-3 lg:grid-cols-3"
+        } gap-3 md:gap-3`}
+      >
+        {filteredAnime.map((anime, index) => (
+          <div
+            key={index}
+            className="h-full z-30 relative  rounded overflow-hidden"
+          >
+            <img
+              src={anime.image}
+              alt=""
+              className="w-full h-full object-cover absolute inset-0"
+              loading="lazy"
+            />
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

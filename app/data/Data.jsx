@@ -293,8 +293,8 @@ export default function AnimeDataProvider({ children }) {
     ],
   };
   const seasonalTheme = {
-    summer: { image: "/Images/summer_footer.png" },
-    winter: { image: "/Images/pngwing.com.png" },
+    summer: { image: "/Images/summer-footer.png" },
+    winter: { image: "/Images/winter-footer.png" },
     autumn: { image: "/Images/pngwing.com.png" },
     rainy: { image: "/Images/image-from-rawpixel-id-6757519-png.png" },
   };

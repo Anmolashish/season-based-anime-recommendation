@@ -17,7 +17,7 @@ export default function AnimeDataProvider({ children }) {
           "A 15-year-old boy and 27-year-old woman find an unlikely friendship on rainy mornings in a Japanese garden.",
         status: "Movie",
         episodes: 1,
-        trailerUrl: "https://www.youtube.com/watch?v=WZvGmS50XaY",
+        trailerUrl: "https://youtu.be/FMabhvDoolc",
       },
       {
         title: "Weathering With You",
@@ -31,7 +31,7 @@ export default function AnimeDataProvider({ children }) {
           "A high-school boy runs away to Tokyo and befriends a girl who can manipulate the weather.",
         status: "Movie",
         episodes: 1,
-        trailerUrl: "https://www.youtube.com/watch?v=Q6iK6DjV_iE",
+        trailerUrl: "https://youtu.be/Q6iK6DjV_iE?si=Oxkru3fhBUR-y3RI",
       },
       {
         title: "5 Centimeters Per Second",
@@ -44,7 +44,7 @@ export default function AnimeDataProvider({ children }) {
           "A story about childhood friends Takaki and Akari and the distance that grows between them.",
         status: "Movie",
         episodes: 3,
-        trailerUrl: "https://www.youtube.com/watch?v=wdM7athAem0",
+        trailerUrl: "https://youtu.be/wdM7athAem0?si=gVUEYLeL2M_XlfVv",
       },
       {
         title: "A Silent Voice",
@@ -57,7 +57,7 @@ export default function AnimeDataProvider({ children }) {
           "A former bully seeks redemption by reconnecting with the deaf girl he tormented in elementary school.",
         status: "Movie",
         episodes: 1,
-        trailerUrl: "https://www.youtube.com/watch?v=nfK6UgLra7g",
+        trailerUrl: "https://youtu.be/nfK6UgLra7g?si=fovYmM9u5usst34r",
       },
       {
         title: "Wolf Children",
@@ -70,7 +70,7 @@ export default function AnimeDataProvider({ children }) {
           "A young mother raises her half-wolf children in the countryside after their werewolf father dies.",
         status: "Movie",
         episodes: 1,
-        trailerUrl: "https://www.youtube.com/watch?v=8WQqcy5xPlQ",
+        trailerUrl: "https://youtu.be/5LoDnaecpU4?si=ZMdBfgShyzzK0b6f",
       },
     ],
     summer: [
@@ -86,7 +86,7 @@ export default function AnimeDataProvider({ children }) {
           "Humanity fights for survival against man-eating Titans in this dark fantasy series.",
         status: "Completed",
         episodes: 89,
-        trailerUrl: "https://www.youtube.com/watch?v=MGRm4IzK1SQ",
+        trailerUrl: "https://youtu.be/MGRm4IzK1SQ?si=Ytv2is5Vh0XbAwm2",
       },
       {
         title: "One Piece",
@@ -99,7 +99,7 @@ export default function AnimeDataProvider({ children }) {
           "Monkey D. Luffy and his pirate crew search for the ultimate treasure to become Pirate King.",
         status: "Ongoing",
         episodes: "1000+",
-        trailerUrl: "https://www.youtube.com/watch?v=JufLdL0mImo",
+        trailerUrl: "https://youtu.be/LHTYpWI3S6Q?si=Mlj-3Ol9OZLueOBk",
       },
       {
         title: "Naruto",
@@ -113,7 +113,7 @@ export default function AnimeDataProvider({ children }) {
           "Naruto Uzumaki, a young ninja, seeks recognition and dreams of becoming the Hokage.",
         status: "Completed",
         episodes: 220,
-        trailerUrl: "https://www.youtube.com/watch?v=-G9BqkgZXRA",
+        trailerUrl: "https://youtu.be/QczGoCmX-pI?si=6_VVdsvvNWYFwAwG",
       },
       {
         title: "My Hero Academia",
@@ -126,7 +126,7 @@ export default function AnimeDataProvider({ children }) {
           "In a world of superpowers, a quirkless boy inherits powers from the world's greatest hero.",
         status: "Ongoing",
         episodes: "100+",
-        trailerUrl: "https://www.youtube.com/watch?v=w1A3tLN9j7s",
+        trailerUrl: "https://youtu.be/EPVkcwyLQQ8",
       },
       {
         title: "Demon Slayer",
@@ -140,7 +140,7 @@ export default function AnimeDataProvider({ children }) {
           "Tanjiro Kamado becomes a demon slayer to avenge his family and cure his demon-turned sister.",
         status: "Ongoing",
         episodes: 44,
-        trailerUrl: "https://www.youtube.com/watch?v=VQGCKyvzIM4",
+        trailerUrl: "https://youtu.be/wyiZWYMilgk?si=RlZbe-yTglbikGnV",
       },
     ],
     autumn: [

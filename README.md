@@ -1,7 +1,7 @@
 ```md
-# 🌸 Seasonal Anime Recommendations - Hackathon Project
+##Seasonal Anime Recommendations - Hackathon Project
 
-## 🧠 Why We Created This Project
+##Why We Created This Project
 
 We developed this seasonal anime recommendation website because:
 
